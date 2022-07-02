@@ -2,7 +2,11 @@
     font-family: Helvetica, Arial, sans-serif;
   }
    
-   
+  
+  #hero-title{
+    background-color:beige;
+  }
+  
   h1 {
     color: SeaGreen;
   }
