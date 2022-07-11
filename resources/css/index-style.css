@@ -1,23 +1,212 @@
-* {
+body{
     font-family: Helvetica, Arial, sans-serif;
-  }
+    margin: 0;
+    padding: 0;
+}
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
    
+   
+  }
   
-  #hero-title{
-    background-color:beige;
+  .logo{
+    cursor: pointer;
+    font-weight: 800;
+    text-transform: uppercase;
   }
-  
-  h1 {
-    color: SeaGreen;
-  }
-   
-   
-  p, 
-  li {
-    font-size: 18px;
-  }
-   
-   
-  a {
+.logo:hover{
+  border-bottom: #000 1px solid;
+  color: blue;
+}
+
+
+
+  .nav-menu li, a {
+    display: inline-block;
+    padding: 0px 20px;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 600;
     text-decoration: none;
+    color: #000;
   }
+
+.nav-menu li:hover{
+  color: blue;
+  border-bottom: #000 1px solid;
+}
+  .hero-title{
+    display: block;
+    padding: 200px;
+    margin: 0px;
+    line-height: 1.0;
+    text-transform: uppercase;
+  }
+
+
+ .hero-ln-1{
+    font-size: 25px;
+  }
+
+.hero-ln-2{
+    font-size: 30px;
+  }
+
+  .hero-ln-3{
+    font-size: 30px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+.hero-par{
+  display: flex;
+  padding: 10px 10%;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-bottom: 1px #000 solid;
+  background-color: pink;
+
+}
+
+/* About me Style */
+
+.aboutme-title{
+  display: flex;
+  padding: 10px 10%;
+}
+
+.about-me{
+  display: flex;
+  padding-bottom: 0;
+}
+
+.about-me div{
+  padding: 10px 10%;
+}
+
+.column-1{
+  line-height: 1.5;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  flex: 1;
+}
+
+.column-2{
+  flex: 1;
+}
+.column-2 img{
+  flex: 1;
+  width: 350px;
+  height: 400px;
+}
+
+/* Project Styling */
+
+.projects{
+  display: flex;
+  background-color: rgb(175, 178, 175);
+  border: 1px rgb(0, 0, 0) solid;
+}
+
+.project-title{
+  padding: 0 10%;
+  padding: 120px 10%;
+}
+.project-1{
+  flex: 1;
+  padding: 10px 20px;
+  border: 1px rgb(0, 0, 0) solid;
+  line-height: 1.5;
+}
+
+.project-1 img {
+  display: flex;
+  width: 250px;
+  height: 150px;
+}
+
+.project-2{
+  flex: 1;
+  padding: 10px 20px;
+  border: 1px rgb(0, 0, 0) solid;
+  line-height: 1.5;
+}
+
+.project-2 img {
+  display: flex;
+  width: 250px;
+  height: 150px;
+}
+.project-3{
+  flex: 1;
+  padding: 10px 20px;
+  border: 1px rgb(0, 0, 0) solid;
+  line-height: 1.5;
+}
+
+.project-3 img {
+  display: flex;
+  width: 250px;
+  height: 150px;
+}
+
+/*Contact Style */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 40px;
+}
+
+.container h1{
+
+}
+/* Footer */
+.footer{
+  display: flex;
+  background-color: gray;
+  justify-content: center;
+  padding: 10px;
+}
+
+.footer a{
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+
+}
