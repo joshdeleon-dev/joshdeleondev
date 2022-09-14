@@ -1,31 +1,52 @@
+/*Global Style*/
+.section-title{
+  display: block;
+  color: #002251;
+  padding: 0px 10%;
+}
+
+li{
+  display: flex;
+  list-style-type: none;
+  line-height: 1.5;
+}
+
 body{
     font-family: Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
-
   header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
-   
-   
   }
-  
+
   .logo{
     cursor: pointer;
     font-weight: 800;
     text-transform: uppercase;
   }
+
 .logo:hover{
   border-bottom: #000 1px solid;
-  color: blue;
 }
 
+.hero-title button{
+  background-color: #45454;
+  border-radius: 5%;
+  width: 150px;
+  height: 50px;
+  font-weight: 800;
+}
 
+.hero-title button:hover{
+  background-color: #7777;
+  cursor: pointer;
+}
 
-  .nav-menu li, a {
+.nav-menu li, a {
     display: inline-block;
     padding: 0px 20px;
     margin: 0;
@@ -45,8 +66,8 @@ body{
     margin: 0px;
     line-height: 1.0;
     text-transform: uppercase;
+    border-bottom: 1px solid #000;
   }
-
 
  .hero-ln-1{
     font-size: 25px;
@@ -74,139 +95,143 @@ body{
 }
 
 /* About me Style */
-
-.aboutme-title{
+.aboutme-container{
   display: flex;
-  padding: 10px 10%;
+  justify-content: center;
+  height: 500px;
+  padding: 0 10% 50px 10%;
 }
 
-.about-me{
+.aboutme-row{
   display: flex;
-  padding-bottom: 0;
+  background: #f2f2f2;
+  width: 100%;
+  padding: 25px;
 }
 
-.about-me div{
-  padding: 10px 10%;
-}
-
-.column-1{
+.aboutme-row p{
+  color: #000;
   line-height: 1.5;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
-  flex: 1;
 }
-
-.column-2{
-  flex: 1;
-}
-.column-2 img{
-  flex: 1;
-  width: 350px;
-  height: 400px;
+.aboutme-row2{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
 }
 
 /* Project Styling */
 
-.projects{
+.projects-container{
   display: flex;
-  background-color: rgb(175, 178, 175);
-  border: 1px rgb(0, 0, 0) solid;
+  flex-direction: row;
+  justify-content: center;
+  height: 600px;
+  padding: 0 10% 50px 10%;
+  margin-bottom: 50px;
 }
 
-.project-title{
-  padding: 0 10%;
-  padding: 120px 10%;
-}
-.project-1{
-  flex: 1;
-  padding: 10px 20px;
-  border: 1px rgb(0, 0, 0) solid;
-  line-height: 1.5;
-}
-
-.project-1 img {
+.project-card{
   display: flex;
-  width: 250px;
-  height: 150px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #000;
+  padding: 20px;
+  margin: 10px;
 }
 
-.project-2{
-  flex: 1;
-  padding: 10px 20px;
-  border: 1px rgb(0, 0, 0) solid;
-  line-height: 1.5;
-}
-
-.project-2 img {
+.project-card p{
   display: flex;
-  width: 250px;
-  height: 150px;
-}
-.project-3{
-  flex: 1;
-  padding: 10px 20px;
-  border: 1px rgb(0, 0, 0) solid;
-  line-height: 1.5;
+  justify-content:flex-start;
+  color: #000;
 }
 
-.project-3 img {
+.project-card img {
   display: flex;
-  width: 250px;
-  height: 150px;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #000000;
 }
 
-/*Contact Style */
-/* Style inputs with type="text", select elements and textareas */
+.tech-stack{
+  display: flex;
+  width: 100%;
+  font-weight: 600;
+}
+
+.tech-stack ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tech-stack img{
+  height: 32px;
+  width: 32px;
+  border-style: none;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+/*Contact Me form */
 input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 100%;
+  padding: 20px; 
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
 }
 
-/* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color: #04AA6D;
+  background-color: #002251;
   color: white;
-  padding: 12px 20px;
+  padding: 20px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #074baa;
 }
 
-/* Add a background color and some padding around the form */
-.container {
+
+.contact {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 40px;
+  padding: 20px;
 }
 
-.container h1{
-
+.contact-container{
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  padding: 20px 10%;
 }
+
+.contact-container h1 {
+  display: flex;
+  justify-content: center;
+}
+
 /* Footer */
 .footer{
   display: flex;
-  background-color: gray;
+  background-color: #002251;
   justify-content: center;
   padding: 10px;
 }
 
-.footer a{
+.footer a, p{
   text-decoration: none;
-  color: #000;
+  color: #ccc;
   cursor: pointer;
-
 }
